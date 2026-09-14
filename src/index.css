@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', serif;
+    --font-serif-title: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF7F2;
+    color: #2C2420;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border: none;
+    min-height: 100vh;
+    display: block;
+    text-align: left;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-heading);
+  }
+
+  .font-brand {
+    font-family: var(--font-serif-title);
+  }
+}
+
+/* Custom organic curved shapes inspired by reference UI */
+.curved-mask-hero {
+  border-radius: 40px 180px 40px 140px;
+}
+
+.curved-banner-top {
+  border-radius: 48px;
+}
+
+.curved-organic-sm {
+  border-radius: 28px;
+}
+
+.curved-organic-lg {
+  border-radius: 36px;
+}
+
+.curved-fluid-shape {
+  border-radius: 60px 20px 60px 20px;
+}
+
+.curved-capsule {
+  border-radius: 9999px;
+}
+
+/* Luxury Gold & Maroon Gradients */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A059 40%, #B8860B 100%);
+}
+
+.bg-gold-subtle {
+  background: linear-gradient(135deg, #FDFBF7 0%, #F5EFEB 100%);
+}
+
+.bg-maroon-gradient {
+  background: linear-gradient(145deg, #7A0F1D 0%, #540A14 100%);
+}
+
+.bg-maroon-dark {
+  background: linear-gradient(160deg, #3A050D 0%, #200206 100%);
+}
+
+.bg-gold-card {
+  background: linear-gradient(140deg, #DFCA9B 0%, #C8AE73 50%, #B59858 100%);
+}
+
+.bg-gold-card-light {
+  background: linear-gradient(140deg, #F4EAD3 0%, #EBD8B3 60%, #E2C798 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border: 1px solid rgba(197, 160, 89, 0.35);
+}
+
+.gold-border-strong {
+  border: 1.5px solid rgba(197, 160, 89, 0.7);
+}
+
+.gold-glow {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.22);
+}
+
+.maroon-glow {
+  box-shadow: 0 15px 35px -5px rgba(122, 15, 29, 0.28);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7A0F1D;
+}
