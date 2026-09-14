@@ -8,7 +8,7 @@ export default function ProductDetailModal({ product, onClose, onOpenInquiry }) 
     const text = encodeURIComponent(
       `Hello Buraq Enterprises, I am interested in getting pricing and delivery details for "${product.name}" (${product.price || ''}). Please share more details.`
     );
-    window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+    window.open(`https://wa.me/917006270870?text=${text}`, '_blank');
   };
 
   return (

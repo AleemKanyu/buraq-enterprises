@@ -73,17 +73,21 @@ export default function Footer({ onOpenInquiry, onOpenCatalog }) {
             <div className="space-y-2.5 text-xs text-[#D8C7B9]">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#D4AF37] flex-shrink-0 mt-0.5" />
-                <span>Buraq Luxury Gallery, Prime Commercial Hub, Delhi NCR / Pan-India Delivery</span>
+                <span>Naibasti, KP Road, Anantnag</span>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
-                <span>+91 98765 43210 / Concierge: +91 11 2345 6789</span>
+                <a href="tel:+917006270870" className="hover:text-[#F3E5AB] transition-colors font-medium">
+                  +91 7006270870
+                </a>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
-                <span>concierge@buraqenterprises.com</span>
+                <a href="mailto:concierge@buraqenterprises.com" className="hover:text-[#F3E5AB] transition-colors">
+                  concierge@buraqenterprises.com
+                </a>
               </div>
 
               <div className="flex items-center gap-2.5">

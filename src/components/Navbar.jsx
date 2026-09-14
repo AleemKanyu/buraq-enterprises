@@ -69,6 +69,16 @@ export default function Navbar({ onOpenInquiry, onOpenCatalog, cartCount = 0, on
 
           {/* Right Action Buttons */}
           <div className="flex items-center gap-3">
+            {/* Direct Call Link */}
+            <a
+              href="tel:+917006270870"
+              className="hidden lg:inline-flex items-center gap-1.5 text-xs font-semibold text-[#3E3029] hover:text-[#7A0F1D] bg-white/70 hover:bg-white px-3.5 py-1.5 rounded-full border border-[#E3D8C6] transition-all"
+              title="Call Buraq Enterprises"
+            >
+              <Phone className="w-3.5 h-3.5 text-[#7A0F1D]" />
+              <span>7006270870</span>
+            </a>
+
             {/* Catalog Button */}
             <button
               onClick={onOpenCatalog}
@@ -135,7 +145,14 @@ export default function Navbar({ onOpenInquiry, onOpenCatalog, cartCount = 0, on
             >
               Showroom & Contact
             </a>
-            <div className="pt-2 border-t border-[#EAE0CD] flex gap-2">
+            <div className="pt-2 border-t border-[#EAE0CD] flex flex-col gap-2">
+              <a
+                href="tel:+917006270870"
+                className="w-full py-2.5 rounded-full text-xs font-semibold text-[#7A0F1D] bg-[#FAF1E3] border border-[#DFCBAE] flex items-center justify-center gap-2"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>Call Concierge: 7006270870</span>
+              </a>
               <button
                 onClick={() => { setMobileMenuOpen(false); onOpenInquiry(); }}
                 className="w-full py-2.5 rounded-full text-xs font-semibold text-white bg-[#7A0F1D] text-center"

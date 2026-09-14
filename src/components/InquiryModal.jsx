@@ -96,7 +96,7 @@ export default function InquiryModal({ isOpen, onClose, defaultProduct = null })
                   <input
                     type="tel"
                     required
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 70062 70870"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#DFCBB0] text-xs sm:text-sm text-[#271E1B] focus:outline-none focus:border-[#7A0F1D]"
